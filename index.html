@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0b818736fc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Responsive Profile Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="profile-card-container">
+        <div class="profile-picture">
+          <img
+            src="/asset/img/pic.png"
+            alt="profile picture"
+            data-testid="profilePicture"
+          />
+        </div>
+
+        <div class="profile-card-content-container">
+          <div class="name">
+            <span class="fullName" data-testid="fullName"
+              >Sulayman Adebayo</span
+            >
+          </div>
+
+          <div class="job-title">
+            <span data-testid="jobTitle">Frontend Developer</span>
+          </div>
+
+          <div class="short-bio">
+            <span data-testid="shortBio">
+              I have passion for Innovation, Technology and Problem Solving. I
+              develop software to provide solution to industry problems</span
+            >
+          </div>
+
+          <div class="current-location" data-testid="currentLocation">
+            <span id="currentLocation"
+              ><i class="fa-solid fa-location-dot"></i>Abuja, Nigeria</span
+            >
+          </div>
+
+          <div class="email-address">
+            <a href="#" data-testid="emailAddress">adebayosulayman@gmail.com</a>
+          </div>
+
+          <div class="social-links">
+            <div class="allSocial">
+              <span id="facebook" data-testid="socialLinks"
+                ><i class="fa-brands fa-facebook"></i
+              ></span>
+              <span id="twitter" data-testid="socialLinks"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></span>
+              <span id="linkedin" data-testid="socialLinks"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></span>
+              <span id="linkedin" data-testid="socialLinks"
+                ><i class="fa-brands fa-instagram"></i
+              ></span>
+              <span id="linkedin" data-testid="socialLinks"
+                ><i class="fa-brands fa-github"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="current-time-utc">
+            <span class="currentTimeUTC" data-testid="currentTimeUTC"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- js -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
