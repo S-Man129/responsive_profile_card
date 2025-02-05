@@ -25,6 +25,8 @@ body {
   background-image: url(/asset/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -78,6 +80,14 @@ img {
 
 .fullName {
   font-size: 30px;
+}
+
+.job-title {
+  color: bisque;
+}
+
+.short-bio {
+  letter-spacing: 0.1rem;
 }
 
 #currentLocation {
