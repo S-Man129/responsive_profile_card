@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Get the current UTC time
   let now = new Date();
-  let utcTime = now.toUTCString(); // Converts to a readable UTC format
+
+  let getPlusOneTime = new Date(now.getTime() + 60 * 60 * 1000);
+
+  let utcTime = getPlusOneTime.toUTCString(); // Converts to a readable UTC format
 
   // Update the HTML element
   currentTimeUTC.innerText = utcTime;
