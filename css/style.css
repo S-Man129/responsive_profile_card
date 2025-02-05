@@ -20,14 +20,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   font-smooth: always;
-  background-color: #2b3137;
+  /* background-color: #2b3137; */
   color: #f5f5f5;
+  background-image: url(/asset/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 main {
-  /* display: flex;
-  align-content: center;
-  justify-content: center; */
   padding: auto;
   margin: auto;
 }
@@ -46,22 +50,23 @@ main {
     rgba(255, 255, 255, 0)
   );
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   border: 1px solid rgba(225, 225, 225, 0.18);
   border-radius: 30px;
   align-items: center;
+  gap: 50px;
 }
 
 .profile-picture {
-  width: 50%;
   height: 685px;
+  width: 100%;
   overflow: hidden;
 }
 
 img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
 }
 
@@ -69,7 +74,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
 }
 
 .fullName {
@@ -86,7 +90,7 @@ img {
   display: flex;
   /* justify-content: space-between; */
   gap: 20px;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: 30px;
 }
 
@@ -95,17 +99,39 @@ img {
 }
 
 .email-address {
-  width: auto;
-  /* height: 50px; */
   padding: 10px 20px;
   border-radius: 10px;
-  /* background: white; */
-  box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  width: fit-content;
 }
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+a:hover {
+  color: bisque;
+}
+
+.fa-brands {
+  transition: transform 0.7s ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: rotate(360deg);
+}
+
+/* .current-time-utc {
+  text-align: center;
+} */
 
 /* responsive */
 
-.profile-card-container {
-  @media screen {
+@media screen and (max-width: 1200px) {
+  .profile-card-container {
+    display: flex;
+    flex-direction: column;
   }
 }
